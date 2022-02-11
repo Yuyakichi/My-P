@@ -1,0 +1,45 @@
+.header {
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  font-size: 40px;
+}
+
+.header-logo {
+  float: left;
+  padding: 100px 0 150px 300px;
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+  font-family: 'Sacramento', cursive;
+}
+  
+.header-right {
+  float: right;
+  padding-top: 100px;
+  padding-right: 300px;
+}
+
+.btn {
+  color: black;
+  display: inline-block;
+}
+
+.fa:hover {
+  opacity: 0.3;
+}
+
+.fa  {
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.header-list  {
+  float: right;
+  padding: 50px 250px 80px 0;
+  font-size: 20px;
+}
+
+.header-list li {
+  list-style: none;
+  float: left;
+  padding-right: 50px; 
+}
