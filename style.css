@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+  font-size: 40px;
+}
+
+.header-left {
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+  font-family: 'Sacramento', cursive;
+  padding-left: 50px;
+}
+  
+.header-right {
+ margin-left: auto;
+}
+
+.icon-field {
+  text-align: center;
+}
+
+.btn {
+  color: black;
+  display: inline-block;
+}
+
+.fa:hover {
+  opacity: 0.3;
+}
+
+.fa  {
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+.header-list  {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.header-list li {
+  list-style: none;
+  float: left;
+  padding-right: 50px; 
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .header-list li {
+    padding-right: 20px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+  .header-list li {
+    padding-right: 10px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .header-left {
+    padding-left: 10px;
+  }
+
+  .header-list li {
+    font-size: 12px;
+  }
+
+  .fa {
+    font-size: 20px; 
+    padding-top: 20px; 
+  }
+}
