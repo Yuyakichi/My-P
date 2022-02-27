@@ -4,83 +4,205 @@
   box-sizing: border-box;
 }
 
+
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: red;
+  padding: 0 16%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.header-left {
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
   font-size: 40px;
 }
 
-.header-left {
-  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-  font-family: 'Sacramento', cursive;
-  padding-left: 50px;
-}
-  
 .header-right {
- margin-left: auto;
+  margin: 5% 0;
 }
 
 .icon-field {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: 24% 0;
+  font-size: 28px;
 }
 
-.btn {
+.btn-icon {
   color: black;
   display: inline-block;
+  padding-left: 28px;
 }
 
-.fa:hover {
+.btn-icon:hover {
   opacity: 0.3;
 }
 
-.fa  {
-  padding-right: 20px;
-  font-size: 30px;
-}
-
-.header-list  {
-  font-size: 20px;
-  padding-top: 40px;
-}
-
-.header-list li {
+.list-item {
+  font-family: 'Roboto Serif', sans-serif;
   list-style: none;
+  padding-left: 30px; 
   float: left;
-  padding-right: 50px; 
+  font-size: 16px;
 }
 
-/* タブレット向けレイアウト */
-@media (max-width: 1000px) {
-  .header-list li {
-    padding-right: 20px;
-  }
+.main-image {
+  position: relative;
+  width: 100%; /* 横幅いっぱい */
+  height: 500px; /* 高さ300px */
+  background-image: url(./images/main-image.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
 }
 
-/* スマホ向けレイアウト */
-@media (max-width: 670px) {
-  .header-list li {
-    padding-right: 10px;
-  }
-
+.image-mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  width: 45%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
 }
 
+.image-text {
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  top: 40%;
+  right: 60%;
+  font-size: 20px;
+  font-family: "M PLUS 1p";
+}
+
+.image-maker-detail {
+  display: flex;
+  align-items: center;
+  top: 200;
+  gap: 8px; /* 余白   */
+  color: white;
+  font-family: "Nico Moji";
+}
+
+.image-text-by {
+  font-size: 16px;
+}
+
+.image-text-name {
+  font-size: 20px;
+}
+
+/* タブレット画面サイズ */
+@media (max-width: 1024px) {
+
+.header-left {
+  font-size: 32px;
+}
+
+.icon-field {
+  margin: 16% 0;
+  font-size: 24px;
+}
+
+.image-text {
+  font-size: 16px;
+}
+}
+
+/* タブレット画面サイズ2 */
+@media (max-width: 830px) {
+
+.image-text {
+  font-size: 16px;
+}
+
+.list-item {
+  font-size: 12px;
+}
+}
+
+/* スマートフォン画面サイズ1 */
+@media (max-width: 768px) {
+
+.header {
+  padding: 0 10%;
+}
+
+.header-left {
+  font-size: 24px;
+}
+
+.image-text {
+  writing-mode: vertical-rl;
+  font-size: 12px;
+}
+
+.text-number {
+  text-orientation: upright;
+}
+
+.icon-field {
+  margin: 12% 0;
+  font-size: 20px;
+}
+
+.list-item {
+  padding-left: 20px;
+}
+
+.image-text-by {
+  font-size: 10px;
+}
+
+.image-text-name {
+  font-size: 10px;
+}
+}
+
+/* スマートフォン画面サイズ2 */
+@media (max-width: 540px) {
+
+.header-left {
+  font-size: 20px;
+}
+
+.list-item {
+  font-size: 10px;
+  padding-left: 16px;
+}
+}
+
+/* スマートフォン画面サイズ3 */
 @media (max-width: 425px) {
-  .header {
-    font-size: 20px;
-  }
 
-  .header-left {
-    padding-left: 10px;
-  }
-
-  .header-list li {
-    font-size: 12px;
-  }
-
-  .fa {
-    font-size: 20px; 
-    padding-top: 20px; 
-  }
+.header {
+  padding: 0 16%;
 }
+
+.icon-field {
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.btn-icon {
+  padding-left: 12px;
+}
+
+.list-item {
+  padding: 10px 12px;
+  float: none;
+}
+}
+
+/* スマートフォン画面サイズ4 */
+@media (max-width: 320px) {
+.header {
+  padding: 0 10%;
+}
+}
+  
